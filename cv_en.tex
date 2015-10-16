@@ -1,0 +1,194 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Mariano} % Your first name
+\familyname{Lambir} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{Cuenca 1554 office "P"}{Ciudad Aut\'{o}noma de Buenos Aires, Argentina}
+\phone{(+54 9 11) 4568 9390}
+\email{mlambir@fiqus.com}
+\homepage{fiqus.com}{http://fiqus.com} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2004--Present}{Systems Engineering}{U.T.N.}{Universidad Tecnol\'{o}gica Nacional}{Not Completed}{Attended until 3\textsuperscript{rd} year}  % Arguments not required can be left empty
+\cventry{1999--2013}{High School}{E.C.E.A.}{Escuela Cristiana Evangelica Argentina}{}{Specialized in Marketing}
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\subsection{In Fiqus}
+
+\cventry{2013-Present}{Developer}{\textsc{Fiqus} - aquiles.com.ar}{Buenos Aires}{}{Developed a multi-tenant django application to create invoices.
+\newline{}\newline{}
+Technologies Used:
+\newline{} Python, Django, Ansible, Docker, javascript, Redis.
+}
+%------------------------------------------------
+\cventry{2015-Present}{Developer}{\textsc{Fdv Solutions}}{Buenos Aires}{}{Developed a backend for an IOS application that gathers data from social networks and normalizes it, allowing the app to display it and sell related items from a shopify store.
+\newline{}\newline{}
+Technologies Used:
+\newline{} Python, Celery, Flask, SqlAlchemy, Redis, Postgresql, ElasticSearch, Logstash, docker.
+}
+%------------------------------------------------
+\cventry{2013-2015}{Developer}{\textsc{Onapsis S.R.L.}}{Buenos Aires}{}{Developed a Backend API and a Frontend web application for an in-house engine that analizes security vulnerabilities in SAP Systems and reports them accordingly.
+\newline{}\newline{}
+Technologies Used:
+\newline{} Python, Celery, Pyramid, SqlAlchemy, Redis, Postgresql, Javascript, Backbone.
+}
+%------------------------------------------------
+\cventry{2012-2013}{Developer}{\textsc{Cicayda}}{Tennesee}{}{Developed an engine that ingests several diferent file formats and indexes and normalizes them for use in legal investigations.
+\newline{}\newline{}
+Technologies Used:
+\newline{} Python, Celery, Flask, SqlAlchemy, Postgresql.
+}
+
+%------------------------------------------------
+\subsection{Before Fiqus}
+%------------------------------------------------
+\cventry{2011-2012}{Developer}{\textsc{Instituto Nacional de Educaci\'{o}n Tecnol\'{o}gica}}{Buenos Aires}{}{Developed web applications for internal and external access of data.
+\newline{}\newline{}
+Technologies Used:
+\newline{} PHP, CakePHP, Javascript, jQuery.
+}
+%------------------------------------------------
+\cventry{2010-2011}{Developer}{\textsc{Globant}}{Buenos Aires}{}{Game development in ActionScript for Electronic Arts and Dreamworks.
+\newline{}\newline{}
+Technologies Used:
+\newline{} ActionScript.
+}
+%------------------------------------------------
+\cventry{2009-2010}{Developer}{\textsc{Freelance}}{Buenos Aires}{}{Developed several desktop and web applications.
+\newline{}\newline{}
+Technologies Used:
+\newline{} PHP, Python, Django, Ruby on Rails, .net
+}
+%------------------------------------------------
+\cventry{2008-2009}{Developer}{\textsc{Whoop Mobile}}{Buenos Aires}{}{Developed mobile applications and a desktop WYSIWYG ui designing app in flex.
+\newline{}\newline{}
+Technologies Used:
+\newline{} J2ME, Flex, Asp.net MVC, WCF.
+}
+%------------------------------------------------
+\cventry{2007-2008}{Developer}{\textsc{Gameloft}}{Buenos Aires}{}{Developed mobile games.
+\newline{}\newline{}
+Technologies Used:
+\newline{} J2ME.
+}
+%------------------------------------------------
+\cventry{2005-2007}{Developer}{\textsc{Organizaci\'{o}n y Gesti\'{o}n}}{Buenos Aires}{}{Developed an accounting system with a web interface.
+\newline{}\newline{}
+Technologies Used:
+\newline{} Visuql Basic, ASP, VBScript, SQL Server.
+}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Computer skills}
+
+\cvitemwithcomment{Advanced}{Python}{Celery, Flask, Sqlalchemy, Django}
+\cvitemwithcomment{}{Javascript}{Node, React, Backbone, jQuery, Underscore}
+
+\cvitem{Intermediate}{C, C++, C\#, Java, PHP, SQL}
+\cvitem{Basic}{Pascal, Smalltalk, Haskell, Prolog, Ruby}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{Spanish}{Mothertongue}{}
+\cvitemwithcomment{English}{Advanced}{Conversationally fluent - TOEFL Score: 603 (2001)}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Bass Guitar}{Electronics}
+\cvlistdoubleitem{Woodworking}{Luthiery}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+%
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+%
+%\makelettertitle % Print letter title
+%
+%\lipsum[1-3] % Dummy text
+%
+%\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
